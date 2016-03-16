@@ -50,6 +50,7 @@ class Experiment():
         # list of 'Run' objects (which themselves contain simulations)
         self.runs=[Run(self.dbase_dir,self.name, self.p, self.Tarray, 
                        self.jamparray ,self.times,i+1) for i in range(self.Jruns)]
+
         
     def intCheck(self,num):
         if int(num) == num:
